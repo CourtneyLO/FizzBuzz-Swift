@@ -42,10 +42,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoU-bX-2uk">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9db-Ul-Hf5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orU-93-b0S">
                                         <rect key="frame" x="0.0" y="137" width="126" height="126"/>
@@ -93,10 +97,13 @@
                             <constraint firstItem="IQC-Bg-QZ9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="TXI-P0-WUS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberButton" destination="CoU-bX-2uk" id="lYL-eI-E7J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="-168"/>
+            <point key="canvasLocation" x="-508" y="-187"/>
         </scene>
     </scenes>
     <resources>
