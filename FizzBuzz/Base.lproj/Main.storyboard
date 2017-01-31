@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,9 +39,46 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQC-Bg-QZ9">
                                 <rect key="frame" x="56" y="202" width="263" height="263"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoU-bX-2uk">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orU-93-b0S">
+                                        <rect key="frame" x="0.0" y="137" width="126" height="126"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hti-0M-aBS">
+                                        <rect key="frame" x="137" y="137" width="126" height="126"/>
+                                        <state key="normal" image="space" backgroundImage="button_border"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzI-Nh-voo">
+                                        <rect key="frame" x="137" y="0.0" width="126" height="126"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IQC-Bg-QZ9" secondAttribute="height" multiplier="1:1" id="0Ga-UP-Go6"/>
+                                    <constraint firstItem="BzI-Nh-voo" firstAttribute="top" secondItem="IQC-Bg-QZ9" secondAttribute="top" multiplier="0.48" id="2GF-A4-YFe"/>
+                                    <constraint firstItem="CoU-bX-2uk" firstAttribute="top" secondItem="IQC-Bg-QZ9" secondAttribute="top" multiplier="0.48" id="7R4-dr-eCi"/>
+                                    <constraint firstAttribute="trailing" secondItem="BzI-Nh-voo" secondAttribute="trailing" id="Maf-51-WmI"/>
+                                    <constraint firstAttribute="bottom" secondItem="orU-93-b0S" secondAttribute="bottom" id="Ndt-6d-D2s"/>
+                                    <constraint firstItem="orU-93-b0S" firstAttribute="leading" secondItem="IQC-Bg-QZ9" secondAttribute="leading" id="Ute-bb-1yG"/>
+                                    <constraint firstItem="hti-0M-aBS" firstAttribute="width" secondItem="IQC-Bg-QZ9" secondAttribute="width" multiplier="0.48" id="VnS-8N-vQx"/>
+                                    <constraint firstItem="CoU-bX-2uk" firstAttribute="height" secondItem="IQC-Bg-QZ9" secondAttribute="height" multiplier="0.48" constant="0.47999999999999998" id="WYP-5j-Y3e"/>
+                                    <constraint firstItem="BzI-Nh-voo" firstAttribute="width" secondItem="IQC-Bg-QZ9" secondAttribute="width" multiplier="0.48" id="Y0r-FO-CGh"/>
+                                    <constraint firstAttribute="bottom" secondItem="hti-0M-aBS" secondAttribute="bottom" id="cc1-wp-a7g"/>
+                                    <constraint firstItem="orU-93-b0S" firstAttribute="height" secondItem="IQC-Bg-QZ9" secondAttribute="height" multiplier="0.48" id="iYg-Az-jMC"/>
+                                    <constraint firstItem="CoU-bX-2uk" firstAttribute="width" secondItem="IQC-Bg-QZ9" secondAttribute="width" multiplier="0.48" constant="0.47999999999999998" id="lHf-cn-Zis"/>
+                                    <constraint firstItem="BzI-Nh-voo" firstAttribute="height" secondItem="IQC-Bg-QZ9" secondAttribute="height" multiplier="0.48" id="mx9-TK-jFO"/>
+                                    <constraint firstItem="hti-0M-aBS" firstAttribute="height" secondItem="IQC-Bg-QZ9" secondAttribute="height" multiplier="0.48" id="riX-C1-tr3"/>
+                                    <constraint firstItem="CoU-bX-2uk" firstAttribute="leading" secondItem="IQC-Bg-QZ9" secondAttribute="leading" id="ufF-nL-oAb"/>
+                                    <constraint firstAttribute="trailing" secondItem="hti-0M-aBS" secondAttribute="trailing" id="upM-X4-Vgp"/>
+                                    <constraint firstItem="orU-93-b0S" firstAttribute="width" secondItem="IQC-Bg-QZ9" secondAttribute="width" multiplier="0.48" id="xn5-vw-XUx"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -58,7 +96,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-397.65625" y="40.4296875"/>
+            <point key="canvasLocation" x="32" y="-168"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="49" height="50"/>
+        <image name="lightning" width="29" height="50"/>
+        <image name="space" width="47" height="50"/>
+    </resources>
 </document>
